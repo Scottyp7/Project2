@@ -18,8 +18,8 @@ export default function CustomImageList() {
   return (
     <ImageList
       sx={{
-        width: 625,
-        height: 1000,
+        width: 375,
+        height: 1200,
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: 'translateZ(0)',
       }}
@@ -90,8 +90,8 @@ const itemData = [
     author: '@hjrc33',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Basketball',
+    img: 'https://thumbs.dreamstime.com/b/healthy-lifestyle-fitness-sports-woman-running-sunrise-road-39709089.jpg',
+    title: 'Running',
     author: '@arwinneil',
     featured: true,
   },
@@ -101,18 +101,18 @@ const itemData = [
     author: '@tjdragotta',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: 'https://w0.peakpx.com/wallpaper/474/449/HD-wallpaper-bicycle-road-bike-cyclist-cycling-concepts.jpg',
+    title: 'Cycling',
     author: '@katie_wasserman',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: 'https://images5.alphacoders.com/575/575603.jpg',
+    title: 'Swimming',
     author: '@silverdalex',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: 'https://t4.ftcdn.net/jpg/02/20/78/17/360_F_220781783_BquhdXwojesZLER7E3GqlmSJEje4ea9f.jpg',
+    title: 'Rugby',
     author: '@shelleypauls',
   },
   {

@@ -7,6 +7,8 @@ import { CardActionArea } from '@mui/material';
 
 export default function ShopCard(props) {
 
+
+
   return (
     <Card sx={{ maxWidth: 200, maxHeight:250 }}>
       <CardActionArea>
@@ -14,7 +16,7 @@ export default function ShopCard(props) {
           component="img"
           height="140"
           image={props.image}
-          alt="green iguana"
+          alt="loading..."
         />
         <CardContent>
           <Typography gutterBottom variant="h6" component="div">

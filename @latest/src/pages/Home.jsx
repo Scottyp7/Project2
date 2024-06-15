@@ -50,12 +50,9 @@ export default function Home()
         justifyContent="flex-start"
         alignItems="flex-start"
         >
-        
-            <ul>{newsList}</ul>
             <CustomImageList></CustomImageList>
+            <ul>{newsList}</ul>
             <ul>{shopList}</ul>
-
-
         </Grid>
 
     </>

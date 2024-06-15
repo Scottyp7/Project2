@@ -5,7 +5,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import PostCard from "../components/PostCard";
+import NewsCard from "../components/NewsCard";
+import { Grid } from "@mui/material";
+import EventsCard from "../components/EventsCard";
 
 
 function GolfRankings() {
@@ -37,11 +39,9 @@ function GolfRankings() {
         getData()
     }, []);
 
-
-
     const rankingsArray = []
 
-    for( let i = 0; i < 5; i++){
+    for( let i = 0; i < 10; i++){
         if(i >= golfers.rankings.length)
             {break}
         const golfer = golfers.rankings[i]
@@ -53,6 +53,42 @@ function GolfRankings() {
         </div>)
     }
 
+
+    //News Cards
+    const [CardState, SetCardState] = useState([])
+
+    const newsList = CardState.map(newsItem => {
+        return <NewsCard key={newsItem.Id} image={newsItem.image} Name={newsItem.Name} Description={newsItem.Description} Time={newsItem.Time} Sport={newsItem.Sport}></NewsCard>
+    }  );
+
+    useEffect(() => { // first arg is usually an arrow function 
+        fetch('news.json')
+            .then((response) => response.json())
+            .then((json) => { // json structure
+            SetCardState(json) 
+      })
+    }, []);
+
+    const [eventState, SetEventState] = useState([])
+
+    const eventList = eventState.map(eventItem => {
+        return <EventsCard key={eventItem.Id} Heading={eventItem.Heading} image={eventItem.image} Location={eventItem.Location} Event={eventItem.Event} Name={eventItem.Name} Score={eventItem.Score}></EventsCard>
+    }  );
+
+    useEffect(() => { // first arg is usually an arrow function 
+        fetch('CurrentEvents.json')
+            .then((response) => response.json())
+            .then((json) => { // json structure
+            SetEventState(json) 
+      })
+    }, []);
+
+
+	
+
+
+
+
     {/*const RankingsData = golfers.rankings.map(golfer => 
         <div key={golfer.playerId}>
             <h2>Name:{golfer.firstName} {golfer.lastName}</h2>
@@ -60,9 +96,18 @@ function GolfRankings() {
         </div>
       )*/}
     
+
+
     return (
+    <Grid
+        columns={12}
+        container
+        direction="row"
+        justifyContent="flex-start"
+        alignItems="flex-start"
+        >
         <div className="Component Box">
-            <Card sx={{ maxWidth: 345, maxheight:600, display:'inline-block'} }>
+            <Card sx={{ maxWidth: 345, maxheight:600, display:'inline-block', margin:1.7} }>
             <CardMedia
               sx={{ height: 100 }}
               image="https://www.sportstravelmagazine.com/wp-content/uploads/2021/01/pga-logo-news-hero.png"
@@ -83,6 +128,10 @@ function GolfRankings() {
             </CardActions>
           </Card>        
         </div> 
-) } 
+        {newsList}
+        {eventList}
+
+    </Grid>
+) } 	
 
 export default GolfRankings

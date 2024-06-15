@@ -5,25 +5,37 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function NewsCard(props) {
+export default function EventsCard(props) {
 
   return (
   <>
     
-    <Card sx={{ maxWidth: 280, maxHeight: 475, minHeight:475, margin:1.7}}><h2>{props.Sport} - {props.Time.toLowerCase()}</h2>
+    <Card sx={{ maxWidth: 280, maxHeight: 475, minHeight:475, margin:1.7}}><h3>Current Event:</h3>
+      
+      <Typography variant="body1" color="text.secondary">
+        {props.Event}, {props.Location}
+      </Typography>
+
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
           image={props.image}
-          alt="loading...."
+          alt="loading..."
         />
         <CardContent>
             <Typography gutterBottom variant="h5" fontWeight={"Bold"} component="div">
-                {props.Name} 
+                 
+                
+            </Typography>
+            <Typography gutterBottom variant="h6" fontWeight={"Bold"} component="div">
+               {props.Location} 
+            </Typography>
+            <Typography variant="h6" color="text.secondary">
+                Current Leader:
             </Typography>
             <Typography variant="body1" color="text.secondary">
-                {props.Description}
+              {props.Name}, {props.Score}
             </Typography>
         </CardContent>
       </CardActionArea>
