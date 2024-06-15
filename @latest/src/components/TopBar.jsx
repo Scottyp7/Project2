@@ -55,7 +55,7 @@ function TopBar() {
               textDecoration: 'none',
             }}
           >
-            Home of Sport
+            <a href='/'>Home of Sport</a>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

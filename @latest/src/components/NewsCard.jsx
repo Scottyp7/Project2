@@ -10,7 +10,7 @@ export default function NewsCard(props) {
   return (
   <>
     
-    <Card sx={{ maxWidth: 280, maxHeight: 475, minHeight:475, margin:1.7}}><h2>{props.Sport} - {props.Time.toLowerCase()}</h2>
+    <Card sx={{ maxWidth: 280, maxHeight: 475, minHeight:475, margin:1.7, marginTop:0}}><h2>{props.Sport} - {props.Time.toLowerCase()}</h2>
       <CardActionArea>
         <CardMedia
           component="img"

@@ -10,11 +10,11 @@ export default function ShopCard(props) {
 
 
   return (
-    <Card sx={{ maxWidth: 200, maxHeight:250 }}>
+    <Card sx={{ maxWidth: 200, maxHeight:400 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="auto"
           image={props.image}
           alt="loading..."
         />

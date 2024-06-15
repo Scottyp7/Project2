@@ -8,9 +8,10 @@ import Typography from '@mui/material/Typography';
 import NewsCard from "../components/NewsCard";
 import { Grid } from "@mui/material";
 import EventsCard from "../components/EventsCard";
+import ShopCard from "../components/ShopCard";
 
 
-function GolfRankings() {
+export default function Golf() {
 
 
     const [golfers, setGolfers] = useState({rankings:[]});    
@@ -57,7 +58,9 @@ function GolfRankings() {
     //News Cards
     const [CardState, SetCardState] = useState([])
 
-    const newsList = CardState.map(newsItem => {
+    const newsFilter = CardState.filter(newsItem => newsItem.Sport.includes("Golf"));
+
+    const newsList = newsFilter.map(newsItem => {
         return <NewsCard key={newsItem.Id} image={newsItem.image} Name={newsItem.Name} Description={newsItem.Description} Time={newsItem.Time} Sport={newsItem.Sport}></NewsCard>
     }  );
 
@@ -83,7 +86,22 @@ function GolfRankings() {
       })
     }, []);
 
+    //Shop Cards
+    const [ShopState, SetShopState] = useState([])
 
+    const shopFilter = ShopState.filter(shopItem => shopItem.Sport.includes("Golf"));
+
+    const shopList = shopFilter.map(shopItem => {
+        return <ShopCard key={shopItem.Id} image={shopItem.image} Name={shopItem.Name} Price={shopItem.Price}></ShopCard>
+    }  );
+
+    useEffect(() => { // first arg is usually an arrow function 
+        fetch('Shop.json')
+            .then((response) => response.json())
+            .then((json) => { // json structure
+            SetShopState(json) 
+      })
+    }, []);
 	
 
 
@@ -130,8 +148,8 @@ function GolfRankings() {
         </div> 
         {newsList}
         {eventList}
+        {shopList}
 
     </Grid>
 ) } 	
 
-export default GolfRankings
