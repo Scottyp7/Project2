@@ -14,25 +14,45 @@ import ShopCard from "../components/ShopCard";
 export default function Golf() {
 
 
-    const [rankings, setRankings] = useState([]);    
+    const [golfers, setGolfers] = useState({rankings:[]});    
 
+
+    async function getData() {
+        const url = 'https://live-golf-data.p.rapidapi.com/stats?year=2024&statId=186';
+        const options = {
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': '40213f4cf1msh063feedcb071abdp157664jsnff041b1fdcee',
+                'x-rapidapi-host': 'live-golf-data.p.rapidapi.com'
+            }
+        };
+        
+        try {
+            const response = await fetch(url, options);
+            const results = await response.json();
+            setGolfers(results) 
+            console.log(results);
+        } catch (error) {
+            console.error(error);}
+    }
 
     useEffect(() => { // first arg is usually an arrow function 
-        fetch('Rankings.json')
-            .then((response) => response.json())
-            .then((json) => { // json structure
-            setRankings(json) 
-      })
+        getData()
     }, []);
 
-    const rankingsList = rankings.map(rankItem => {
-    return(
-    <div key={rankItem.rank}>
-        <h3>Rank: {rankItem.rank} Events: {rankItem.events}</h3>
-        <h2>Name: {rankItem.Name}</h2>
-    </div>)
-    
-    }  );
+    const rankingsArray = []
+
+    for( let i = 0; i < 10; i++){
+        if(i >= golfers.rankings.length)
+            {break}
+        const golfer = golfers.rankings[i]
+        rankingsArray.push(     
+
+        <div key={golfer.playerId}>
+            <h3>Rank: {golfer.rank['$numberInt']} Events: {golfer.events['$numberInt']}</h3>
+            <h2>Name: {golfer.firstName} {golfer.lastName}</h2>
+        </div>)
+    }
 
 
     //News Cards
@@ -53,7 +73,7 @@ export default function Golf() {
     }, []);
 
     const [eventState, SetEventState] = useState([])
-
+    
     useEffect(() => { // first arg is usually an arrow function 
         fetch('CurrentEvents.json')
             .then((response) => response.json())
@@ -99,9 +119,28 @@ export default function Golf() {
 
     return (
     <div className='Container1' style={{ display:"flex", justifyContent:"space-between", margin:20}}>
-        <div style={{ maxHeight:1500,minWidth:300, display:"flex", justifyContent:"space-evenly", flexWrap:"wrap", }}>
-            {rankingsList}
-        </div>
+        <div style={{  minWidth:300}}>
+            <Card sx={{ maxWidth: 345, maxheight:600} }>
+            <CardMedia
+              sx={{ height: 100 }}
+              image="https://www.sportstravelmagazine.com/wp-content/uploads/2021/01/pga-logo-news-hero.png"
+              title="golf logo"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                PGA World Rankings
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {rankingsArray}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Share</Button>
+              <Button size="small">Learn More</Button>
+
+            </CardActions>
+          </Card>        
+        </div> 
 
         <div style={{ maxHeight:1500,minWidth:600, display:"flex", justifyContent:"space-evenly", flexWrap:"wrap", }}>
             {newsList}

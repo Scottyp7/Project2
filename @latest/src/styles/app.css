@@ -1,0 +1,21 @@
+.app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .basket {
+    margin-top: 20px;
+  }
+  
+  .basket ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .basket li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

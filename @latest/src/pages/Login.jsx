@@ -1,23 +1,29 @@
-import LoginForm from "../components/LoginForm"
+
 import { useContext } from "react"
 import { UserContext } from "../context/UserProvider"
-import { Link } from "react-router-dom"
-import NewsCard from "../components/NewsCard"
-export default function Home()
+import LoginForm from "../components/LoginF"
+import '../styles/LoginForm.css'
+
+export default function Login()
 {
     const {currentUser, handleUpdateUser} = useContext(UserContext)
 
-    const myStyle = {
-    }
 
-    if(!currentUser.email)
+
+    {/*if(!currentUser.email)
         return(<>
             <LoginForm></LoginForm>
-        </>)
+        </>)*/}
 
     return(
     <>
+    <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
 
+
+        <div className="App">
+            <LoginForm />
+        </div>
+    </div>
     </>
     
     )

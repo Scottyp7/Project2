@@ -10,7 +10,7 @@ export default function EventsCard(props) {
   return (
   <>
     
-    <Card sx={{ maxWidth: 280, maxHeight: 275, minHeight:350, margin:1.7}}><h3>Current Event:</h3>
+    <Card sx={{minWidth:300, maxWidth:300, justifyContent:'center'}}><h3>Current Event:</h3>
       
       <Typography variant="body1" color="text.secondary">
         {props.Event}, {props.Location}

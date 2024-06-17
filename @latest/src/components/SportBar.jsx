@@ -10,9 +10,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 
+
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: 100,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
         backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -33,6 +34,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -54,7 +56,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 ,marginTop:0.5}}>
             <AppBar position="static">
                 <Toolbar>
                     <IconButton
@@ -72,7 +74,7 @@ export default function SearchAppBar() {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                      <Link to="/GolfRankings">Golf</Link>
+                      <Link to="/Golf">Golf</Link>
                     </Typography>
                     <Typography
                         variant="h6"
@@ -112,7 +114,15 @@ export default function SearchAppBar() {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        MySports
+                       <Link to="/Shop">Shop</Link> 
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        noWrap
+                        component="div"
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                    >
+                       <Link to="/Profile">Profile</Link> 
                     </Typography>
 
                     <Search>

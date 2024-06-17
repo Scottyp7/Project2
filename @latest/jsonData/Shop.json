@@ -5,7 +5,7 @@
         "Price":"30.99",
         "Description": "Stay shaded on the fairways with this Golf 96 Cap from Under Armour. In a Black colourway, this cap is cut from light, durable polyester",
         "image": "https://i8.amplience.net/i/jpl/jd_527163_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Golf"
+        "category":"Golf"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
         "Price":"90.95",
         "Description": "Gear up for the game in these men's Match Football Track Pants from adidas. Landing in a Collegiate Navy colourway",
         "image": "https://i8.amplience.net/i/jpl/jd_509449_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@
         "Price":"90.95",
         "Description": "Stay covered on the course with this men's Golf 96 Cap from Under Armour. In a Grey colourway, this golf cap is cut from smooth and durable polyester",
         "image": "https://i8.amplience.net/i/jpl/jd_688964_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Golf"
+        "category":"Golf"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
         "Price":"34.99",
         "Description": "Complete your 'fit with this Golf 96 Cap from Under Armour. In a Blue colourway, this cap is made with smooth, lightweight woven polyester",
         "image": "https://i8.amplience.net/i/jpl/jd_688963_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Golf"
+        "category":"Golf"
     },
     {
         "id":5,
@@ -37,7 +37,7 @@
         "Price":"34.99",
         "Description": "Cheer on your side with this men's LA Galaxy 2024/25 Home Shirt from adidas. Coming in a White colourway",
         "image": "https://i8.amplience.net/i/jpl/jd_691976_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":6,
@@ -45,7 +45,7 @@
         "Price":"75.85",
         "Description": "Get behind your nation in this women's Scotland 2024 Home Shirt from adidas. In a Navy colourway,",
         "image": "https://i8.amplience.net/i/jpl/jd_702656_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":7,
@@ -53,7 +53,7 @@
         "Price": 65.99,
         "Description": "Streamline your skills with these men's Academy 23 Track Pants from Nike. In a Black colourway",
         "image": "https://i8.amplience.net/i/jpl/jd_620111_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":8,
@@ -61,7 +61,7 @@
         "Price": "79.99",
         "Description": "Product InfoReviewDeliveryReturns Step onto the pitch with the smooth and stretchy coverage of Nike's sweat-wicking Academy Top. It's your go-to for training ",
         "image": "https://i8.amplience.net/i/jpl/jd_ANZ0113905_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":9,
@@ -69,7 +69,7 @@
         "Price":"30.99",
         "Description": "Stay shaded on the fairways with this Golf 96 Cap from Under Armour. In a Black colourway, this cap is cut from light, durable polyester",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_527168_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Golf"
+        "category":"Golf"
     },
     {
         "id":10,
@@ -77,7 +77,7 @@
         "Price":"90.95",
         "Description": "Gear up for the game in these men's Match Football Track Pants from adidas. Landing in a Collegiate Navy colourway",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_699838_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":11,
@@ -85,7 +85,7 @@
         "Price":"90.95",
         "Description": "Stay covered on the course with this men's Golf 96 Cap from Under Armour. In a Grey colourway, this golf cap is cut from smooth and durable polyester",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_526038_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Golf"
+        "category":"Golf"
     },
     {
         "id":12,
@@ -93,7 +93,7 @@
         "Price":"34.99",
         "Description": "Complete your 'fit with this Golf 96 Cap from Under Armour. In a Blue colourway, this cap is made with smooth, lightweight woven polyester",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_631088_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Golf"
+        "category":"Golf"
     },
     {
         "id":13,
@@ -101,7 +101,7 @@
         "Price":"34.99",
         "Description": "Cheer on your side with this men's LA Galaxy 2024/25 Home Shirt from adidas. Coming in a White colourway",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_699847_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":14,
@@ -109,7 +109,7 @@
         "Price":"75.85",
         "Description": "Get behind your nation in this women's Scotland 2024 Home Shirt from adidas. In a Navy colourway,",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_692455_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":15,
@@ -117,7 +117,7 @@
         "Price": 65.99,
         "Description": "Streamline your skills with these men's Academy 23 Track Pants from Nike. In a Black colourway",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_686480_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Football"
+        "category":"Football"
     },
     {
         "id":16,
@@ -125,8 +125,40 @@
         "Price": "79.99",
         "Description": "Product InfoReviewDeliveryReturns Step onto the pitch with the smooth and stretchy coverage of Nike's sweat-wicking Academy Top. It's your go-to for training ",
         "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_699595_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
-        "Sport":"Football"
-    }
+        "category":"Football"
+    },    
+    {
+        "id":17,
+        "Name": "adidas Originals Tennis Luxe Asymmetrical Top",
+        "Price": "60.65",
+        "Description": "Bring a '90s style to your look with this women's Tennis Luxe Asymmetrical Top from adidas Originals. In a Pearl colourway, this top is made from a stretchy jersey fabric",
+        "image": "https://i8.amplience.net/i/jpl/jd_412878_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
+        "category":"Tennis"
+    },
+    {
+        "id":18,
+        "Name": "Emporio Armani EA7 Tennis T-Shirt",
+        "Price": "99.99",
+        "Description": "Get a premium look for chill days or when you're training with this men's Tennis T-Shirt from EA7 Emporio Armani. Coming in a Red colourway",
+        "image": "https://i8.amplience.net/i/jpl/jd_693893_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
+        "category":"Tennis"
+    },    
+    {
+        "id":19,
+        "Name": "Emporio Armani EA7 Tennis Shorts",
+        "Price": 130.00,
+        "Description": "Product InfoReviewDeliveryReturns Refresh your Summer 'drobe with these men's Tennis Shorts from Emporio Armani EA7. In a Black colourway, these standard-fit shorts are cut from a poly fabric",
+        "image": "https://i8.amplience.net/i/jpl/jd_625140_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
+        "category":"Tennis"
+    },    
+    {
+        "id":20,
+        "Name": "Ellesse Pleat Tennis Skirt",
+        "Price": "79.99",
+        "Description": "Bring preppy vibes to your look with this women's Pleat Tennis Skirt from Ellesse. In a white colourway, this skirt is made from a comfy cotton",
+        "image": "https://i8.amplience.net/i/jpl/jd_403076_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
+        "category":"Tennis"
+    } 
 
 
 ]

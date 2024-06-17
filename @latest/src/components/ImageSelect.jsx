@@ -18,7 +18,7 @@ export default function CustomImageList() {
   return (
     <ImageList
       sx={{
-        width: 375,
+        width: 600,
         height: 1200,
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: 'translateZ(0)',

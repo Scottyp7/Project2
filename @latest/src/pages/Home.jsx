@@ -43,18 +43,21 @@ export default function Home()
     return(
     <>
     <br></br>
-        <Grid
-        columns={12}
-        container
-        direction="row"
-        justifyContent="flex-start"
-        alignItems="flex-start"
-        >
-            <CustomImageList></CustomImageList>
-            <ul>{newsList}</ul>
-            <ul>{shopList}</ul>
-        </Grid>
+        <div className='Container1' style={{border:"2px solid black", display:"flex", justifyContent:"space-evenly"}}>
 
+            <div style={{justifyContent:"center", alignItems:"center"}}>        
+            <h1 style={{justifyContent:"center", display:"flex", alignItems:"center"}}> Recent News</h1>
+                <ul>{newsList}</ul>   
+            </div>  
+            <div style={{justifyContent:"center", alignItems:"center"}}>               
+                <CustomImageList></CustomImageList>
+            </div>
+            <div style={{justifyContent:"center", alignItems:"center"}}>    
+                <h1 style={{justifyContent:"center", display:"flex", alignItems:"center"}}>Shop</h1>
+                <ul>{shopList}</ul>
+            </div>
+
+        </div>
     </>
     
     )
