@@ -158,7 +158,45 @@
         "Description": "Bring preppy vibes to your look with this women's Pleat Tennis Skirt from Ellesse. In a white colourway, this skirt is made from a comfy cotton",
         "image": "https://i8.amplience.net/i/jpl/jd_403076_a?qlt=92&w=950&h=1212&v=1&fmt=auto",
         "category":"Tennis"
-    } 
-
-
+    },
+    {
+        "id":21,
+        "Name": "McKenzie Phoenix Swim Shorts",
+        "Price":70 ,
+        "Description": "Tommy Hilfiger Small Flag Swim Shorts",
+        "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_702138_bl&qlt=92&exclusive=1&wid=726&hei=726&v=1&fmt=auto",
+        "category":"Swimming"
+    },   
+    {
+        "id":22,
+        "Name": "McKenzie Phoenix Swim Shorts",
+        "Price":50 ,
+        "Description": "",
+        "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_698030_bl&qlt=92&exclusive=1&wid=726&hei=726&v=1&fmt=auto",
+        "category":"Swimming"
+    },   
+    {
+        "id":23,
+        "Name": "Lacoste Colour Block Swim Shorts Junior",
+        "Price":61 ,
+        "Description": "",
+        "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_698043_bl&qlt=92&exclusive=1&wid=726&hei=726&v=1&fmt=auto",
+        "category":"Swimming"
+    },   
+    {
+        "id":24,
+        "Name": "adidas Badge Of Sport Woven Swim Shorts",
+        "Price": 60,
+        "Description": "",
+        "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_696798_bl&qlt=92&w=726&h=726&v=1&fmt=auto",
+        "category":"Swimming"
+    },   
+    {
+        "id":25,
+        "Name": "McKenzie Sunset Palm Swim Shorts",
+        "Price":81 ,
+        "Description": "",
+        "image": "https://i8.amplience.net/t/jpl/jdau_product_list?plu=jd_698029_bl&qlt=92&exclusive=1&wid=726&hei=726&v=1&fmt=auto",
+        "category":"Swimming"
+    }  
 ]

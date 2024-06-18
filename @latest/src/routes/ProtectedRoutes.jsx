@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 
 // wrap around logged-in user only routes to protect them
-function ProtectedRoute({ redirectPath = '/', children }) {
+function ProtectedRoute({ redirectPath = '/login', children }) {
     const { currentUser } = useContext(UserContext)
 
     if (!currentUser.email) {

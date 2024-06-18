@@ -18,7 +18,7 @@ export default function Golf() {
 
 
     useEffect(() => { // first arg is usually an arrow function 
-        fetch('Rankings.json')
+        fetch('../jsonData/Rankings.json')
             .then((response) => response.json())
             .then((json) => { // json structure
             setRankings(json) 
@@ -27,9 +27,10 @@ export default function Golf() {
 
     const rankingsList = rankings.map(rankItem => {
     return(
-    <div key={rankItem.rank}>
-        <h3>Rank: {rankItem.rank} Events: {rankItem.events}</h3>
+    <div key={rankItem.Rank}>
         <h2>Name: {rankItem.Name}</h2>
+        <h3>Rank: {rankItem.Rank} Events: {rankItem.Events}</h3>
+
     </div>)
     
     }  );
@@ -45,7 +46,7 @@ export default function Golf() {
     }  );
 
     useEffect(() => { // first arg is usually an arrow function 
-        fetch('news.json')
+        fetch('../jsonData/news.json')
             .then((response) => response.json())
             .then((json) => { // json structure
             SetCardState(json) 
@@ -55,7 +56,7 @@ export default function Golf() {
     const [eventState, SetEventState] = useState([])
 
     useEffect(() => { // first arg is usually an arrow function 
-        fetch('CurrentEvents.json')
+        fetch('../jsonData/CurrentEvents.json')
             .then((response) => response.json())
             .then((json) => { // json structure
             SetEventState(json) 
@@ -70,14 +71,15 @@ export default function Golf() {
     //Shop Cards
     const [ShopState, SetShopState] = useState([])
 
-    const shopFilter = ShopState.filter(shopItem => shopItem.cateogry.includes("Golf"));
+    const shopFilter = ShopState.filter(shopItem => shopItem.category.includes("Golf"));
 
-    const shopList = shopFilter.map(shopItem => {
+    const shopSlice = shopFilter.slice(0,4)
+    const shopList = shopSlice.map(shopItem => {
         return <ShopCard key={shopItem.Id} image={shopItem.image} Name={shopItem.Name} Price={shopItem.Price}></ShopCard>
     }  );
 
     useEffect(() => { // first arg is usually an arrow function 
-        fetch('Shop.json')
+        fetch('../jsonData/Shop.json')
             .then((response) => response.json())
             .then((json) => { // json structure
             SetShopState(json) 
@@ -99,8 +101,11 @@ export default function Golf() {
 
     return (
     <div className='Container1' style={{ display:"flex", justifyContent:"space-between", margin:20}}>
-        <div style={{ maxHeight:1500,minWidth:300, display:"flex", justifyContent:"space-evenly", flexWrap:"wrap", }}>
-            {rankingsList}
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWvoZVUx8I0Gpr1TzG6PL_QZ7yV1SCEIVqMw&sv" height="100" width="300"></img>
+            <div style={{ maxHeight:1500,width:300, display:"flex", justifyContent:"space-evenly", flexWrap:"wrap", }}>
+                {rankingsList}
+            </div>
         </div>
 
         <div style={{ maxHeight:1500,minWidth:600, display:"flex", justifyContent:"space-evenly", flexWrap:"wrap", }}>

@@ -15,12 +15,13 @@ body, html {
   
   /* Header styling */
   .shop-header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #f1f1f1;
+    color: #474747;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   }
   
   /* Content area styling */
@@ -99,3 +100,5 @@ body, html {
   .product-item button:hover {
     background-color: #0056b3;
   }
+
+  

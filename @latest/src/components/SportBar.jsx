@@ -114,7 +114,7 @@ export default function SearchAppBar() {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                       <Link to="/Shop">Shop</Link> 
+                       <Link to="/Shop2">Shop</Link> 
                     </Typography>
                     <Typography
                         variant="h6"

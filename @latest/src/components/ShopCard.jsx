@@ -8,7 +8,6 @@ import { CardActionArea } from '@mui/material';
 export default function ShopCard(props) {
 
 
-
   return (
     <Card sx={{ maxWidth: 200, minHeight:400, maxHeight:400}}>
       <CardActionArea>

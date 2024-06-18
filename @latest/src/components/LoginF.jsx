@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import '../styles/LoginForm.css';
 import { FaGoogle, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../context/UserProvider';
 
 const LoginForm = () => {
 
@@ -8,19 +10,25 @@ const LoginForm = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
-  
+    const navigate = useNavigate()
+    const {currentUser, handleUpdateUser} = useContext(UserContext)
+
+
     const handleLogin = () => {
-      // Add your login logic here
+      navigate("/Profile")
+      handleUpdateUser({email, password})
       console.log('Logging in with', { email, password });
     };
   
     const handleRegister = () => {
-      // Add your register logic here
+      navigate("/Profile")
+      handleUpdateUser({email, password})
       console.log('Registering with', { username, email, password });
     };
   
     const handleSocialLogin = (provider) => {
-      // Add your social login logic here
+      navigate("/Profile")
+      handleUpdateUser({email, password})
       console.log(`Logging in with ${provider}`);
     };
   
